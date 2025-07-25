@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini E-Commerce de Arte e Meditação</title>
+  <style>
+    body {
+      background-color: #ffe0b3;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #754c0f;
+    }
+    section {
+      margin: 40px 0;
+    }
+    img {
+      border-radius: 500px;
+      border: solid aliceblue;
+      margin: 10px;
+      width: 250px;
+      height: 250px;
+      cursor: pointer;
+    }
+    audio, video {
+      margin: 10px;
+      border: solid blue;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INTRODUÇÃO COM VÍDEO -->
+  <section>
+    <h1>Bem-vindo ao nosso site, escute nossa apresentação</h1>
+    <video controls width="500">
+      <source src="introdução.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+  </section>
+
+  <!-- GALERIA DE ARTE -->
+  <section>
+    <h1>Seja bem-vindo à nossa galeria de arte</h1>
+    <img src="mona_lisa.png" alt="Mona Lisa" />
+    <img src="noite.png" alt="Noite Estrelada" />
+    <img src="venuz.png" alt="Nascimento de Vênus" />
+  </section>
+
+  <!-- PLAYLIST DE MEDITAÇÃO -->
+  <section>
+    <h1>Playlist de Meditação</h1>
+
+    <h2>Minecraft</h2>
+    <audio controls>
+      <source src="mine.mp3" type="audio/mp3" />
+      Seu navegador não suporta áudio.
+    </audio>
+
+    <h2>Lofi</h2>
+    <audio controls>
+      <source src="lofi.mp3" type="audio/mp3" />
+    </audio>
+
+    <h2>Stay With Me</h2>
+    <audio controls>
+      <source src="真夜中のドア.mp3" type="audio/mp3" />
+    </audio>
+  </section>
+
+</body>
+</html>
