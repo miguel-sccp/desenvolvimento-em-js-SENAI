@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mini E-Commerce de Arte e Meditação</title>
+ <p><strong>⚠ Baixe os áudios e vídeos separadamente. Estão disponíveis no Drive:</strong></p>
+<a href="https://drive.google.com/open?id=1pZ6Tulz2Ca5GkHSlOmJX0XAz8rI0E_AC&usp=drive_copy">Clique aqui</a>
+
   <style>
     body {
       background-color: #ffe0b3;
@@ -29,6 +32,36 @@
       margin: 10px;
       border: solid blue;
     }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #754c0f;
+      padding: 10px;
+      background-color: #fff3e0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      padding: 10px;
+      width: 300px;
+      border-radius: 10px;
+      border: 1px solid #754c0f;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #754c0f;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -45,7 +78,7 @@
   <!-- GALERIA DE ARTE -->
   <section>
     <h1>Seja bem-vindo à nossa galeria de arte</h1>
-    <img src="mona_lisa.png" alt="Mona Lisa" />
+    <img src="monalisa.png" alt="Mona Lisa" />
     <img src="noite.png" alt="Noite Estrelada" />
     <img src="venuz.png" alt="Nascimento de Vênus" />
   </section>
@@ -67,9 +100,50 @@
 
     <h2>Stay With Me</h2>
     <audio controls>
-      <source src="真夜中のドア.mp3" type="audio/mp3" />
+      <source src="松原みき 真夜中のドア.mp3" type="audio/mp3" />
     </audio>
   </section>
+
+  <!-- TABELA DE PRODUTOS -->
+  <section>
+    <h1>Produtos em destaque</h1>
+    <table>
+      <tr>
+        <th>Nome da Pintura</th>
+        <th>Artista</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td>Mona Lisa</td>
+        <td>Leonardo da Vinci</td>
+        <td>R$ 1.000.000</td>
+      </tr>
+      <tr>
+        <td>Noite Estrelada</td>
+        <td>Vincent van Gogh</td>
+        <td>R$ 850.000</td>
+      </tr>
+      <tr>
+        <td>Nascimento de Vênus</td>
+        <td>Botticelli</td>
+        <td>R$ 920.000</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- FORMULÁRIO DE CADASTRO -->
+  <section>
+    <h1>Cadastre-se</h1>
+    <form>
+      <input type="text" placeholder="Nome" required />
+      <input type="email" placeholder="E-mail" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+
+</body>
+</html>
 
 </body>
 </html>
