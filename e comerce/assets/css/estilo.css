@@ -1,0 +1,26 @@
+body{
+font-family: Arial;
+text-align: center;
+background-color: rgb(214, 145, 88);
+}
+.produto{
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.produto img{
+    width: 70%;
+    height: 150px;
+    cursor: pointer;
+}
+.produto h2{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.produto p{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
