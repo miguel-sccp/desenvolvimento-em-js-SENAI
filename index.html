@@ -1,143 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini E-Commerce de Arte e Meditação</title>
-  <style>
-    body {
-      background-color: #ffe0b3;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-    h1 {
-      color: #754c0f;
-    }
-    section {
-      margin: 40px 0;
-    }
-    img {
-      border-radius: 500px;
-      border: solid aliceblue;
-      margin: 10px;
-      width: 250px;
-      height: 250px;
-      cursor: pointer;
-    }
-    audio, video {
-      margin: 10px;
-      border: solid blue;
-    }
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
-      width: 80%;
-    }
-    th, td {
-      border: 1px solid #754c0f;
-      padding: 10px;
-      background-color: #fff3e0;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-    input[type="text"], input[type="email"], input[type="password"] {
-      padding: 10px;
-      width: 300px;
-      border-radius: 10px;
-      border: 1px solid #754c0f;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #754c0f;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube clone</title>
 </head>
 <body>
-
-  <!-- INTRODUÇÃO COM VÍDEO -->
-  <section>
-    <h1>Bem-vindo ao nosso site, escute nossa apresentação</h1>
-    <video controls width="500">
-      <source src="introdução.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeo.
-    </video>
-  </section>
-
-  <!-- GALERIA DE ARTE -->
-  <section>
-    <h1>Seja bem-vindo à nossa galeria de arte</h1>
-    <img src="monalisa.png" alt="Mona Lisa" />
-    <img src="noite.png" alt="Noite Estrelada" />
-    <img src="venuz.png" alt="Nascimento de Vênus" />
-  </section>
-
-  <!-- PLAYLIST DE MEDITAÇÃO -->
-  <section>
-    <h1>Playlist de Meditação</h1>
-
-    <h2>Minecraft</h2>
-    <audio controls>
-      <source src="mine.mp3" type="audio/mp3" />
-      Seu navegador não suporta áudio.
-    </audio>
-
-    <h2>Lofi</h2>
-    <audio controls>
-      <source src="lofi.mp3" type="audio/mp3" />
-    </audio>
-
-    <h2>Stay With Me</h2>
-    <audio controls>
-      <source src="松原みき 真夜中のドア.mp3" type="audio/mp3" />
-    </audio>
-  </section>
-
-  <!-- TABELA DE PRODUTOS -->
-  <section>
-    <h1>Produtos em destaque</h1>
+    <!--cobeçalho-->
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <h1>YouTube</h1>
+            </td>
+            <td>
+                <form>
+                    <input type="text" placeholder="pesquisar" size="60">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </td>
+            <td width="15%" align="right">
+                <button>Login</button>
+            </td>
+        </tr>
+        </table>
+    </header>
+    <!--conteudo principal-->
+    <main>
     <table>
-      <tr>
-        <th>Nome da Pintura</th>
-        <th>Artista</th>
-        <th>Preço</th>
-      </tr>
-      <tr>
-        <td>Mona Lisa</td>
-        <td>Leonardo da Vinci</td>
-        <td>R$ 1.000.000</td>
-      </tr>
-      <tr>
-        <td>Noite Estrelada</td>
-        <td>Vincent van Gogh</td>
-        <td>R$ 850.000</td>
-      </tr>
-      <tr>
-        <td>Nascimento de Vênus</td>
-        <td>Botticelli</td>
-        <td>R$ 920.000</td>
-      </tr>
-    </table>
-  </section>
+    <tr>
+        <td width="20%" valing="top">
+            <nav>
+                <ul>
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#">explorar</a></li>
+                    <li><a href="#">inscrioções</a></li>
+                    <hr>
+                    <li><a href="#">biblioteca</a></li>
+                    <li><a href="#">histórico</a></li>
+                    <li><a href="#">vdeos</a></li>
+                    <li><a href="#">ver mais</a></li>
+                    <li><a href="#">videos marcados</a></li>
+                    
+                </ul>
+            </nav>
+        </td>
+    </tr>
+    
+    <!--contudo dos videos-->
+    <td width="100%">
+        <div>
+           
+            <iframe width="1236" height="695" src="https://www.youtube.com/embed/94VNX_NGzzM" title="Vasco 0 (3) x (4) 0 Corinthians • Final Mundial de Clubes 2000 Gols e Melhores Momentos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  <!-- FORMULÁRIO DE CADASTRO -->
-  <section>
-    <h1>Cadastre-se</h1>
-    <form>
-      <input type="text" placeholder="Nome" required />
-      <input type="email" placeholder="E-mail" required />
-      <input type="password" placeholder="Senha" required />
-      <button type="submit">Cadastrar</button>
-    </form>
-  </section>
+                
+            </iframe>
+            <h2>Primiro campeão do mundo</h2>
+            <p>1.2300 visualização - 01 de agosto de 2025</p>
+            <hr>
+            <table width="800%">
+                <tr>
+                <td width="450%">
+                    <img src="sccp.png"alt ="canal">
+                </td>
 
+                <td width="60%">
+                    <h3>Nome do canal</h3>
+                    <p>1.000 inscritos</p>
+                </td>
+                <td width="10%">
+                    <button type="submit">Inscrever-se</button>
+                </td>
+                </tr>
+            </table>
+            <div>
+                <!--ações-->
+            
+
+            <button>like</button>
+            <button>dislike</button>
+            <button>compartilhar</button>
+            <button>salvar</button>
+
+            
+ </div>
+</div>    
+<!--comentários-->
+        <div>
+            <h3>Comentários(122121)</h3>
+            <from>
+                <textarea placeholder="Adicionar um comentário" rows="5" cols="100"></textarea>
+            <br>
+            <button type="submit">Comentar</button>
+            </from>
+            <hr>
+        <div>
+        <p><strong>usiario 1</strong>-o giagnte de itaquera </p>
+        <p><strong>usiario 2</strong>-Vai cointhians</p>    
+        </div>
+</div>
+</td>
+</table>
+</main>
 </body>
 </html>
