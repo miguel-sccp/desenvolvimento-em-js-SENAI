@@ -1,0 +1,48 @@
+:root {
+  --cor-1: #ff0000;  
+  --cor-2: #000000;  
+  --cor-3: #00c1c5;  
+  --cor-4: #997c3d;  
+  --cor-5: #02342f;  
+  --cor-6: #812d9d;  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+    color: white;
+  width: 150px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius:15px;
+}
+
+/* Usando as variáveis do :root */
+.card1 { background-color: var(--cor-1); }
+.card2 { background-color: var(--cor-2); }
+.card3 { background-color: var(--cor-3); }
+.card4 { background-color: var(--cor-4); }
+.card5 { background-color: var(--cor-5); }
+.card6 { background-color: var(--cor-6); }
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    border-radius: 25px;
+  }
+}
