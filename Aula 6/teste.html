@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Aleatório</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0a0707;
+            margin: 0;
+        }
+
+        .semaforo {
+            width: 100px;
+            background: rgb(0, 0, 0);
+            padding: 30px;
+            border-radius: 30px;
+        }
+
+        .luz {
+            width: 60px;
+            height: 60px;
+            background: #333;
+            margin: 15px auto;
+            border-radius: 50%;
+        }
+
+        .botao-img {
+            width: 150px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão para mudar a luz -->
+    <img src="download.png" alt="Botão" class="botao-img" onclick="mudarCorAleatoria()">
+
+    <!-- Semáforo -->
+    <div class="semaforo">
+        <div id="vermelho" class="luz"></div>
+        <div id="amarelo" class="luz"></div>
+        <div id="verde" class="luz"></div>
+    </div>
+
+    <script>
+        function mudarCorAleatoria() {
+            // Apaga todas as luzes
+            document.getElementById('vermelho').style.background = '#333';
+            document.getElementById('amarelo').style.background = '#333';
+            document.getElementById('verde').style.background = '#333';
+
+            // Lista de luzes
+            const luzes = ['vermelho', 'amarelo', 'verde'];
+            const cor = luzes[Math.floor(Math.random() * luzes.length)];
+
+            // Acende a luz escolhida
+            if (cor === 'vermelho') {
+                document.getElementById('vermelho').style.background = 'red';
+            } else if (cor === 'amarelo') {
+                document.getElementById('amarelo').style.background = 'yellow';
+            } else {
+                document.getElementById('verde').style.background = 'green';
+            }
+        }
+    </script>
+
+</body>
+</html>
