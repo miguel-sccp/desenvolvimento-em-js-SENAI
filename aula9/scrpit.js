@@ -1,17 +1,42 @@
+class pessoa{
+    constructor(nome,ano_nascimento,endereco,curso,altura){ //auxiliador da classe
+        this.nome = nome ;
+        this.ano_nascimento = ano_nascimento ;
+        this.endereco = endereco ;
+        this.curso = curso ;
+        this.altura = altura ;
+        
+    }
+
+    display(){
+        console.log(this.nome);
+    }
 
 
-function calcularValorHora(salario, horasTrabalhadas) {
-    return salario / horasTrabalhadas;
+calcular_idade(){
+    let ano_atual = parseInt(prompt("Digite o ano atual:"));
+    let ano_nascimento = parseInt(prompt("Digite seu ano de nascimento:"));
+    let callculo = ano_atual - ano_nascimento;
+    console.log("A idade de " + this.nome + " é: " + callculo);
 }
-function calcularHoraExtra(valorHora, horasExtras) {
-    return valorHora * horasExtras * 1.5; 
+
+calcular_imc(){
+    let altura = parseFloat(prompt("digite sua altura"))
+    let peso = parseFloat(prompt("digite sua peso"))
+    let calculo=peso/(altura ** 2);
+    console.log("O IMC de " + this.nome + " é: " + calculo);
 }
-function calcularTotal(salario, horasExtras, valorHora) {
-    return salario + calcularHoraExtra(valorHora, horasExtras);
+
 }
-let salario = parseFloat(prompt("Digite o salário mensal do trabalhador:"));
-let horasTrabalhadas = parseFloat(prompt("Digite a quantidade de horas trabalhadas no mês:"));
-let horasExtras = parseFloat(prompt("Digite a quantidade de horas extras trabalhadas:"));
-let valorHora = calcularValorHora(salario, horasTrabalhadas);
-let total = calcularTotal(salario, horasExtras, valorHora);
-prompt("O total a receber é: R$ " + total.toFixed(2) + "\nValor da hora: R$ " + valorHora.toFixed(2) + "\nValor das horas extras: R$ " + calcularHoraExtra(valorHora, horasExtras).toFixed(2));
+//filho 1
+outra_pessoa= new pessoa("João", 1990, "Rua A, 123", "python", 1.75);
+//filho 2
+outra_pessoa2 = new pessoa("Maria", 1995, "Rua B, 456", "JavaScript", 1.65);
+
+
+outra_pessoa.display()
+outra_pessoa2.display()
+outra_pessoa.calcular_idade()
+outra_pessoa2.calcular_idade()
+outra_pessoa.calcular_imc()
+outra_pessoa2.calcular_imc()
