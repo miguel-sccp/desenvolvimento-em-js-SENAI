@@ -41,8 +41,35 @@ Aqui estão exercícios práticos de **HTML, CSS e JS**, organizados por aula e 
 
 ---
 
-## 🚀 Como executar  
+## 🚀 Como executar os projetos
 
-1. Clone este repositório:  
+1. **Clonar o repositório**  
+   Abra o terminal ou prompt de comando e digite:  
    ```bash
    git clone https://github.com/miguel-sccp/desenvolvimento-em-js-SENAI.git
+
+   ## 🛠️ Tecnologias utilizadas  
+
+Durante o desenvolvimento dos projetos, utilizei:  
+
+### Front-end
+- **HTML5** → Estrutura de páginas web.  
+- **CSS3** → Estilização, incluindo Flexbox e Grid Layout.  
+- **JavaScript (ES6+)** → Lógica, manipulação do DOM e interatividade.  
+
+### Ferramentas
+- **VS Code** → Editor de código.  
+- **Git & GitHub** → Controle de versão e hospedagem do repositório.  
+- **Navegadores modernos** → Chrome, Edge, Firefox (para testes).  
+
+### Boas práticas
+- Separação de HTML, CSS e JS.  
+- Nomes claros para arquivos e pastas.  
+- Comentários explicativos nos scripts.  
+
+---
+
+## 👨‍💻 Autor  
+
+Feito com dedicação por **[Miguel](https://github.com/miguel-sccp)** no curso do **SENAI**.  
+> Este repositório registra minha evolução como desenvolvedor front-end e serve de base para projetos futuros. 🚀
