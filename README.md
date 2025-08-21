@@ -48,7 +48,7 @@ Aqui estão exercícios práticos de **HTML, CSS e JS**, organizados por aula e 
    ```bash
    git clone https://github.com/miguel-sccp/desenvolvimento-em-js-SENAI.git
 
-   ## 🛠️ Tecnologias utilizadas  
+## 🛠️ Tecnologias utilizadas  
 
 Durante o desenvolvimento dos projetos, utilizei:  
 
